@@ -64,14 +64,43 @@
 // Console.WriteLine(fullNameConcatMethod);
 // Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
+// Console.WriteLine();
+// Console.WriteLine("Константы");
+
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ ВолГУ";
+
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
+
+// Console.WriteLine($"Учебное заведение: {CollegeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+
 Console.WriteLine();
-Console.WriteLine("Константы");
+Console.WriteLine("Визитная карточка студента");
 
-const double VatRate = 0.20;
-const string CollegeName = "ВФ ВолГУ";
+string name = "Рита Пономарёва Алексеевна";
+const string group = "ИСП-251";
+int course = 2;
+string specialization = "09.02.11";
 
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
+int firstWork = 4;
+int secondWork = 5;
+int threeWork = 4;
 
-Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+int work = (firstWork + secondWork + threeWork) / 3;
+
+bool sholaship = true;
+
+int allWeek = 18;
+int lastWeek = 2;
+
+int week = allWeek - lastWeek;
+
+Console.WriteLine($"ФИO: {name}");
+Console.WriteLine($"Группа: {group}");
+Console.WriteLine($"Курс: {courseNumber}");
+Console.WriteLine($"Специальность: {specialization}");
+Console.WriteLine($"Средний балл за 3 работы: {work}");
+Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
+Console.WriteLine($"Учебных недель осталось в семестре: {week}");
