@@ -99,7 +99,7 @@ int week = allWeek - lastWeek;
 
 Console.WriteLine($"ФИO: {name}");
 Console.WriteLine($"Группа: {group}");
-Console.WriteLine($"Курс: {courseNumber}");
+Console.WriteLine($"Курс: {course}");
 Console.WriteLine($"Специальность: {specialization}");
 Console.WriteLine($"Средний балл за 3 работы: {work}");
 Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
