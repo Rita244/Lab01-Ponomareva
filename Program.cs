@@ -105,16 +105,33 @@
 // Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
 // Console.WriteLine($"Учебных недель осталось в семестре: {week}");
 
+// Console.WriteLine();
+// Console.WriteLine("Финансовый мини-расчёт");
+
+// int scholarship = 15000;
+// int monthlyExpenses = 12000;
+
+// int remainingPerMonth = scholarship - monthlyExpenses;
+
+// const int MonthsInSemester = 4;
+// int remainingPerSemester = remainingPerMonth * MonthsInSemester;
+
+// Console.WriteLine($"Остаток за месяц: {remainingPerMonth} руб.");
+// Console.WriteLine($"Остаток за семестр ({MonthsInSemester} мес.): {remainingPerSemester} руб.");
+
+
 Console.WriteLine();
-Console.WriteLine("Финансовый мини-расчёт");
+Console.WriteLine("Конвертер температур");
 
-int scholarship = 15000;
-int monthlyExpenses = 12000;
+double celsius = 23.5;
 
-int remainingPerMonth = scholarship - monthlyExpenses;
+const double FahrenheitMultiplier = 9.0;
+const double FahrenheitDivider = 5.0;
+const double FahrenheitOffset = 32.0;
+const double KelvinOffset = 273.15;
 
-const int MonthsInSemester = 4;
-int remainingPerSemester = remainingPerMonth * MonthsInSemester;
+double fahrenheit = celsius * FahrenheitMultiplier / FahrenheitDivider + FahrenheitOffset;
 
-Console.WriteLine($"Остаток за месяц: {remainingPerMonth} руб.");
-Console.WriteLine($"Остаток за семестр ({MonthsInSemester} мес.): {remainingPerSemester} руб.");
+double kelvin = celsius + KelvinOffset;
+
+Console.WriteLine( $"{celsius:F1}°C = {fahrenheit:F1}°F = {kelvin:F2}K");
