@@ -35,15 +35,31 @@
 // Console.WriteLine($"Сумма процентов: {interest:F2} руб.");
 // Console.WriteLine($"Итоговая стоимость: {totalPrice:F2} руб.");
 
+// Console.WriteLine();
+// Console.WriteLine("Внимание: деление int");
+
+// int totalStudents = 25;
+// int groupsCount = 4;
+
+// int studentsPerGroupWrong = totalStudents / groupsCount;
+// double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
+
+// Console.WriteLine($"25 / 4 как int:    {studentsPerGroupWrong}");
+// Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+
 Console.WriteLine();
-Console.WriteLine("Внимание: деление int");
+Console.WriteLine("Способы собрать строку");
 
-int totalStudents = 25;
-int groupsCount = 4;
+string firstName = "Анна";
+string lastName = "Смирнова";
 
-int studentsPerGroupWrong = totalStudents / groupsCount;
-double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
+string fullNameConcat = firstName + " " + lastName;
 
-Console.WriteLine($"25 / 4 как int:    {studentsPerGroupWrong}");
-Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+string fullNameInterp = $"{firstName} {lastName}";
 
+string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+
+Console.WriteLine(fullNameConcat);
+Console.WriteLine(fullNameInterp);
+Console.WriteLine(fullNameConcatMethod);
+Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
