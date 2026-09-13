@@ -76,31 +76,45 @@
 // Console.WriteLine($"Учебное заведение: {CollegeName}");
 // Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
 
+// Console.WriteLine();
+// Console.WriteLine("Визитная карточка студента");
+
+// string name = "Рита Пономарёва Алексеевна";
+// const string group = "ИСП-251";
+// int course = 2;
+// string specialization = "09.02.11";
+
+// int firstWork = 4;
+// int secondWork = 5;
+// int threeWork = 4;
+
+// int work = (firstWork + secondWork + threeWork) / 3;
+
+// bool sholaship = true;
+
+// int allWeek = 18;
+// int lastWeek = 2;
+
+// int week = allWeek - lastWeek;
+
+// Console.WriteLine($"ФИO: {name}");
+// Console.WriteLine($"Группа: {group}");
+// Console.WriteLine($"Курс: {course}");
+// Console.WriteLine($"Специальность: {specialization}");
+// Console.WriteLine($"Средний балл за 3 работы: {work}");
+// Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
+// Console.WriteLine($"Учебных недель осталось в семестре: {week}");
+
 Console.WriteLine();
-Console.WriteLine("Визитная карточка студента");
+Console.WriteLine("Финансовый мини-расчёт");
 
-string name = "Рита Пономарёва Алексеевна";
-const string group = "ИСП-251";
-int course = 2;
-string specialization = "09.02.11";
+int scholarship = 15000;
+int monthlyExpenses = 12000;
 
-int firstWork = 4;
-int secondWork = 5;
-int threeWork = 4;
+int remainingPerMonth = scholarship - monthlyExpenses;
 
-int work = (firstWork + secondWork + threeWork) / 3;
+const int MonthsInSemester = 4;
+int remainingPerSemester = remainingPerMonth * MonthsInSemester;
 
-bool sholaship = true;
-
-int allWeek = 18;
-int lastWeek = 2;
-
-int week = allWeek - lastWeek;
-
-Console.WriteLine($"ФИO: {name}");
-Console.WriteLine($"Группа: {group}");
-Console.WriteLine($"Курс: {course}");
-Console.WriteLine($"Специальность: {specialization}");
-Console.WriteLine($"Средний балл за 3 работы: {work}");
-Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
-Console.WriteLine($"Учебных недель осталось в семестре: {week}");
+Console.WriteLine($"Остаток за месяц: {remainingPerMonth} руб.");
+Console.WriteLine($"Остаток за семестр ({MonthsInSemester} мес.): {remainingPerSemester} руб.");
