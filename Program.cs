@@ -31,3 +31,4 @@
 // Console.WriteLine($"Процент: {interestRate:P0}");
 // Console.WriteLine($"Сумма процентов: {interest:F2} руб.");
 // Console.WriteLine($"Итоговая стоимость: {totalPrice:F2} руб.");
+
