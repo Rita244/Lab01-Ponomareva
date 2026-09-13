@@ -120,18 +120,32 @@
 // Console.WriteLine($"Остаток за семестр ({MonthsInSemester} мес.): {remainingPerSemester} руб.");
 
 
+// Console.WriteLine();
+// Console.WriteLine("Конвертер температур");
+
+// double celsius = 23.5;
+
+// const double FahrenheitMultiplier = 9.0;
+// const double FahrenheitDivider = 5.0;
+// const double FahrenheitOffset = 32.0;
+// const double KelvinOffset = 273.15;
+
+// double fahrenheit = celsius * FahrenheitMultiplier / FahrenheitDivider + FahrenheitOffset;
+
+// double kelvin = celsius + KelvinOffset;
+
+// Console.WriteLine( $"{celsius:F1}°C = {fahrenheit:F1}°F = {kelvin:F2}K");
+
+
+using static System.Console;
 Console.WriteLine();
-Console.WriteLine("Конвертер температур");
+Console.WriteLine("Найди и исправь ошибку");
 
-double celsius = 23.5;
 
-const double FahrenheitMultiplier = 9.0;
-const double FahrenheitDivider = 5.0;
-const double FahrenheitOffset = 32.0;
-const double KelvinOffset = 273.15;
+Minutes = 500;
+int minutesPerLesson = 45;
 
-double fahrenheit = celsius * FahrenheitMultiplier / FahrenheitDivider + FahrenheitOffset;
+int fullLessons = totalMinutes / minutesPerLesson;
+int remainingMinutes = totalMinutes % minutesPerLesson;
 
-double kelvin = celsius + KelvinOffset;
-
-Console.WriteLine( $"{celsius:F1}°C = {fahrenheit:F1}°F = {kelvin:F2}K");
+Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + " + $"{remainingMinutes} минут.");
