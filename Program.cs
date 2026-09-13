@@ -1,76 +1,33 @@
-﻿// // // Console.WriteLine("Hello, World!");
+﻿// string myName = "Иван Иванов";
+// string groupName = "ИСП-123";
+// int age = 18;
+// double averageGrade = 4.5;
+// bool isStudent = true;
 
+// Console.WriteLine($"Имя: {myName}");
+// Console.WriteLine($"Группа: {groupName}");
+// Console.WriteLine($"Возраст: {age}");
+// Console.WriteLine($"Средний балл: {averageGrade}");
+// Console.WriteLine($"Студент: {isStudent}");
 
-// // string myName = "Рита Пономарёва";
-// // string groupName = "ИСП-251";
-// // int courseNumber = 2;
-// // double averageGrade = 4.6;
-// // bool isBurget = true;
+// double roomLength = 5.5;
+// double roomWidth = 3.2;
 
-// // Console.WriteLine("Знакомство");
-// // Console.WriteLine($"Студент: {myName}");
-// // Console.WriteLine($"Группа: {groupName}");
-// // Console.WriteLine($"Курс: {courseNumber}");
-// // Console.WriteLine($"Средний балл: {averageGrade}");
-// // Console.WriteLine($"Бюджетное место: {isBurget}");
+// double roomArea = roomLength * roomWidth;
+// double roomPerimeter = 2 * (roomLength + roomWidth);
 
-// Console.WriteLine();
-// Console.WriteLine("Визитная карточка студента");
+// Console.WriteLine($"Длина: {roomLength} м");
+// Console.WriteLine($"Ширина: {roomWidth} м");
+// Console.WriteLine($"Площадь: {roomArea:F2} м²");
+// Console.WriteLine($"Периметр: {roomPerimeter:F2} м");
 
-// string name = "Рита Пономарёва Алексеевна";
-// const string group = "ИСП-251";
-// int course = 2;
-// string specialization = "09.02.11";
+// int laptopPrice = 80000;
+// double interestRate = 0.10;
 
-// int firstWork = 4;
-// int secondWork = 5;
-// int threeWork = 4;
+// double interest = laptopPrice * interestRate;
+// double totalPrice = laptopPrice + interest;
 
-// int work = (firstWork + secondWork + threeWork) / 3;
-
-// bool sholaship = true;
-
-// int allWeek = 18;
-// int lastWeek = 2;
-
-// int week = allWeek - lastWeek;
-
-// Console.WriteLine($"ФИO: {name}");
-// Console.WriteLine($"Группа: {group}");
-// Console.WriteLine($"Курс: {courseNumber}");
-// Console.WriteLine($"Специальность: {specialization}");
-// Console.WriteLine($"Средний балл за 3 работы: {work}");
-// Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
-// Console.WriteLine($"Учебных недель осталось в семестре: {week}");
-
-
-
-
-string name = "Рита Пономарёва Алексеевна";
-const string group = "ИСП-251";
-int course = 2;
-string specialization = "09.02.11";
-
-int firstWork = 4;         
-int secondWork = 5;
-int threeWork = 4;
-
-int work = (firstWork + secondWork + threeWork) / 3;
-
-bool sholaship = true;
-
-int allWeek = 18;
-int lastWeek = 2;
-
-int week = allWeek - lastWeek;
-
-Console.WriteLine("Визитная карточка студента");
-Console.WriteLine($"ФИO: {name}");
-Console.WriteLine($"Группа: {group}");
-Console.WriteLine($"Курс: {course}");
-Console.WriteLine($"Специальность: {specialization}");
-Console.WriteLine();
-Console.WriteLine($"Средний балл за 3 работы: {work}");
-Console.WriteLine($"Стипендия положена (>= 4.0): {sholaship}");
-Console.WriteLine($"Учебных недель осталось в семестре: {week}");
-Console.WriteLine($"");
+// Console.WriteLine($"Цена ноутбука: {laptopPrice} руб.");
+// Console.WriteLine($"Процент: {interestRate:P0}");
+// Console.WriteLine($"Сумма процентов: {interest:F2} руб.");
+// Console.WriteLine($"Итоговая стоимость: {totalPrice:F2} руб.");
